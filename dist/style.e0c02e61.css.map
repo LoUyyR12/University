@@ -1,0 +1,1 @@
+{"version":3,"sources":["style\\style.scss"],"names":[],"mappings":"AACA;EACI;EACA","file":"style.e0c02e61.css","sourceRoot":"..\\src","sourcesContent":["// General styles\r\n* {\r\n    font-family: 'Quicksand', sans-serif;\r\n    background-color: green;\r\n}"]}

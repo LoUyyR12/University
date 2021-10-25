@@ -1,0 +1,24 @@
+{
+  "name": "university-main",
+  "version": "1.0.0",
+  "description": "Online Hand-made Store",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [
+    "hand-made",
+    "online",
+    "store"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.43.3"
+  },
+  "dependencies": {
+    "boxicons": "^2.0.9"
+  }
+}

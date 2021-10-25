@@ -1,0 +1,346 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-page {
+  background-color: #fcddc6;
+}
+
+hr {
+  border: none;
+  background-color: #cf5a11;
+  height: 2px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  background-color: #cf5a11;
+  color: #fff;
+  font-size: 40px;
+  padding: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+header .main-nav-item {
+  margin-right: 70px;
+}
+
+header .main-nav-link {
+  text-decoration: none;
+  background-color: #fff;
+  color: #cf5a11;
+  font-weight: 600;
+  border: 1px solid midnightblue;
+  border-radius: 10px;
+  padding: 17px;
+  margin-top: 6px;
+}
+
+header .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+header .cart-counter {
+  font-weight: 600;
+  background-color: #cf5a11;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border-radius: 0.8rem;
+}
+
+.background {
+  background-position: center;
+}
+
+.background .navigation .brand-name {
+  text-align: initial;
+  color: #2e2601;
+}
+
+.background .navigation .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 1%;
+  list-style: none;
+}
+
+.background .navigation .menu-item {
+  width: 200px;
+  background: #e49c6f;
+  padding: 3px;
+  border-radius: 14%;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.background .navigation .menu-link {
+  text-decoration: none;
+  color: #2e2601;
+}
+
+.background .navigation .menu-link :hover {
+  text-decoration: underline;
+}
+
+.background .description-title {
+  font-size: 2.2rem;
+  text-align: end;
+}
+
+.background .description-content {
+  font-size: 30px;
+}
+
+.background .hand-made_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .hand-made_about .text-about {
+  margin-left: 50px;
+}
+
+.customers-title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.customers .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-right: 5px;
+  margin: 0 auto 1%;
+  list-style: none;
+  border: 1px dashed #cf5a11;
+  border-radius: 6px;
+  padding: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about {
+  margin: 20px 5px;
+}
+
+.about_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 5px;
+}
+
+.about_1-content {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.about_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_2-content {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+.contacts .join {
+  text-align: center;
+  background-color: #fcddc6;
+  color: #2e2601;
+  font-size: 30px;
+}
+
+.s_icon_32 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.s_icon_32 {
+  padding-left: 42px !important;
+}
+
+.s_icon_32 .s_icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s_icon_32 .s_icon {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+}
+
+/******** Shop Info ***/
+#shop_info {
+  clear: both;
+  margin: 20px 0 27px 0;
+  padding: 19px 0 0 0;
+  font-size: 11px;
+  color: #555;
+}
+
+#shop_info_wrap {
+  padding: 0 0 28px 0;
+}
+
+#shop_info h2 {
+  margin-bottom: 14px;
+  font-size: 20px;
+  color: #888;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+#shop_description {
+  font-size: 11px;
+}
+
+#shop_description h2 {
+  text-indent: 30px;
+}
+
+#shop_description p {
+  margin-right: 10px;
+}
+
+.s_phone_32,
+.s_fax_32,
+.s_mobile_32,
+.s_mail_32,
+.s_skype_32 {
+  background-image: url(../img/info_icons.png);
+  background-color: #000000;
+}
+
+.s_phone_32 {
+  background-position: 0 0 !important;
+}
+
+.s_mobile_32 {
+  background-position: 0 -32px !important;
+}
+
+.s_mail_32 {
+  background-position: 0 -64px !important;
+}
+
+.s_skype_32 {
+  background-position: 0 -96px !important;
+}
+
+.s_fax_32 {
+  background-position: 0 -128px !important;
+}
+
+#twitter h2 {
+  text-indent: 30px;
+}
+
+#facebook h2 {
+  text-indent: 30px;
+}
+
+#facebook .s_widget_holder {
+  margin-top: -46px;
+}
+
+#shop_contacts {
+  font-size: 12px;
+}
+
+#shop_contacts h2 {
+  text-indent: 30px;
+}
+
+#shop_contacts td {
+  height: 52px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+}
+
+#shop_contacts .s_icon_32 {
+  display: inline-block;
+}
+
+.footer {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p1 {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
