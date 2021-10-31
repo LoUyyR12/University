@@ -15,10 +15,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "boxicons": "^2.0.9",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.43.3"
   },
-  "dependencies": {
-    "boxicons": "^2.0.9"
-  }
+  "dependencies": {}
 }
