@@ -8,102 +8,128 @@ $dark-accent-color: #2e2601;
 // General styles
 * {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.under {
+    background-color: $header-color;
+    height: 18px;
 }
 .wrapper {
-    max-width: 1400px;
+    max-width: 1050px;
     margin: 0 auto;
 }
-
-.header-page {
-    background-color: $header-color ;
-}
-
 hr {
     border: none; 
     background-color: $accent-color; 
     height: 2px; 
-   }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .logo {
-        background-color: $accent-color;
-        color: $white;
-        font-size: 40px;
-        padding: 16px;
-        margin-left: 10px;
-        cursor: pointer;
-    }
-    .main-nav {
-        display: flex;
-        list-style: none;
-        padding-left: 0;
-        &-item {
-            margin-right: 70px;
-        }
-        &-link{
-            text-decoration: none;
-            background-color: #fff;
-            color: $accent-color;
-            font-weight: 600;
-            border: 1px solid midnightblue ;
-            border-radius: 10px;
-            padding: 17px;
-            margin-top: 6px;
-        }
-    }
-    .cart{
-        display: flex;
-        align-items: center;
-        margin-left: 70px;
-        &-counter {
-            font-weight: 600;
-            background-color: $accent-color;
-            color: #fff;
-            font-size: 22px;
-            margin-right: 10px;
-            padding: 10px 15px;
-            border-radius: 0.8rem;
-        }
-        cursor: pointer;
-    }
 }
 
-// Specific Styles
+// For all Buttons 
+button {
+    border-color: $dark-accent-color;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    font-size: 30px;
+    color: $dark-accent-color;
+    box-shadow: 0 0 40px 40px $header-color inset, 0 0 0 0 $light-accent-color;
+    transition: all 150ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 10px 0 $light-accent-color inset, 0 0 10px 4px $light-accent-color;
+    }
+    cursor: pointer;
+}
 
+.header-page {
+    background-color: $header-color;
+    border-radius: 8px;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            background-color: $accent-color;
+            font-size: 40px;
+            padding: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+            &_link {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            font-size: 20px;
+            padding-left: 0;
+            margin-left: 70px;
+            &-item {
+                margin-right: 70px;
+            }
+            &-link {  
+                text-decoration: none;
+                background-color: #fff;
+                color: $dark-accent-color;
+                font-weight: 600;
+                border: 1px solid $dark-accent-color ;
+                border-radius: 10px;
+                padding: 17px;
+                margin-top: 6px;
+            }
+        }
+        .cart{
+            margin-left: 70px;
+            &_link {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                text-decoration: none;
+                color: $dark-accent-color;
+            }
+            &-counter {
+                font-weight: 600;
+                color: $dark-accent-color;
+                font-size: 35px;
+                margin-right: 10px;
+                border: 1.2px solid $dark-accent-color;
+                padding: 15px 20px;
+                border-radius: 0.8rem;
+            }
+        }
+    }
+}
+// Specific Styles
 .background {
-    // background: url('/src/img/background-handmade.jpg');
     background-position: center;
     .navigation {
         .brand-name {
-            text-align: initial;
+            text-align: center;
+            font-size: 2.6rem;
             color: $dark-accent-color;
         }
         .menu {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            margin: 0 auto 1%;
+            margin: 15px 0px 45px auto;
             list-style: none;
-            
-
             &-item {
                 width: 200px;
                 background: $light-accent-color;
-                padding: 3px;
-                border-radius: 14%;
-                font-size: 30px;
-                font-weight: 600;
+                padding: 5px 10px;
+                border-radius: 34px;
+                font-size: 22px;
+                font-weight: 750;
                 text-align: center;
             }
             &-link {
                 text-decoration: none;
                 color: $dark-accent-color;
                 :hover {
-                    text-decoration: underline;
+                    text-decoration: dotted;
+                    text-decoration-color: $white;
                 } 
             }
         }
@@ -120,7 +146,6 @@ header {
     .hand-made_about {
         display: flex;
         align-items: center;
-    
         .text-about  {
             margin-left: 50px;
         }
@@ -149,19 +174,18 @@ header {
 
 }
 
+// !!!!!!____ ABOUT includes flip-cards____ >>>>>
 .about {
     // margin: 20px 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     .about-1 {
         background-color: transparent;
-        width: 600px;
-        height: 350px;
-        border: 1px solid #f1f1f1;
+        width: 500px;
+        height: 300px;
         perspective: 1000px;
-
         &-inner {
             position: relative;
             width: 100%;
@@ -169,15 +193,14 @@ header {
             text-align: center;
             transition: transform 0.8s;
             transform-style: preserve-3d;
-            
             &-front {
                 background-color: #bbb;
                 color: black;
             }
         }
         &-back {
-            background-color: $light-accent-color;
-            color: white;
+            background-color: $header-color;
+            color: $dark-accent-color;
             transform: rotateY(180deg);
         }
     }
@@ -194,9 +217,8 @@ header {
 
     .about-2 {
         background-color: transparent;
-        width: 600px;
-        height: 350px;
-        border: 1px solid #f1f1f1;
+        width: 500px;
+        height: 300px;
         perspective: 1000px;
 
         &-inner {
@@ -213,8 +235,8 @@ header {
             }
         }
         &-back {
-            background-color: $light-accent-color;
-            color: white;
+            background-color: $header-color;
+            color: $dark-accent-color;
             transform: rotateY(180deg);
         }
     }
@@ -242,7 +264,10 @@ header {
 }
 
 .all-footer {
+    margin-top: 120px;
     display: flex;
+    justify-content: space-around;
+
 
     .main-block{
         display: flex;
@@ -252,10 +277,41 @@ header {
     // }
 }
 
+// Styles For Pages
+.handmade-logo {
+    img {
+        height: 75px;
+        width: 500px;
+        background-size: cover;
+    }
+}
+
+.page1, .page2, .page3, .page4, .page5{
+    display: flex;
+    // justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 320px;
+        height: 230px;
+        margin-right: 15px;
+        border: 2px solid $accent-color;
+    }
+    p{
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
 
 
 
-
+// Cart Page
+.cart_page {
+    height: 800px;
+}
 
 
 
