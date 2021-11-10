@@ -14,15 +14,17 @@ $dark-accent-color: #2e2601;
 .under {
     background-color: $header-color;
     height: 18px;
+    width: 100%;
 }
 .wrapper {
-    max-width: 1050px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 hr {
     border: none; 
     background-color: $accent-color; 
     height: 2px; 
+    width: 1000px;
 }
 
 // For all Buttons 
@@ -43,6 +45,7 @@ button {
 .header-page {
     background-color: $header-color;
     border-radius: 8px;
+    // width: 1000px;
     header {
         display: flex;
         justify-content: space-between;
@@ -62,40 +65,38 @@ button {
           .main-nav {
             list-style: none;
             display: flex;
+            width: 100%;
             justify-content: center;
-            font-size: 10px;
+            align-items: center;
+            font-size: 17px;
+            // padding-left: 0;
+            margin-left: 70px;
+
+            &-item {
+              margin-right: 60px;
+              padding: 7px;
+            }
+            &-link{
+              display: flex;
+              font-weight: 600;
+              text-decoration: none;
+              background-color: $white;
+              border: 1px solid $dark-accent-color ;
+              color: $dark-accent-color;
+              border-radius: 10px;
+              padding: 7px;
+              margin-top: 6px;
+              &:hover{
+                background-color: $light-accent-color;
+                
+              }
+            }
 
           }
         }
-      //   nav{
-      //     display: flex;
-      //   .main-nav {
-      //       display: flex;
-      //       flex-wrap: wrap;
-      //       justify-content: center;
-      //       list-style: none;
-      //       font-size: 18px;
-      //       padding-left: 0;
-      //       margin-left: 70px;
-      //       &-item {
-      //           margin-right: 70px;
-      //       }
-      //       &-link {  
-      //           display: flex;
-      //           text-decoration: none;
-      //           background-color: #fff;
-      //           color: $dark-accent-color;
-      //           font-weight: 600;
-      //           border: 1px solid $dark-accent-color ;
-      //           border-radius: 10px;
-      //           padding: 7px;
-      //           margin-top: 6px;
-      //       }
-      //   }
-      // }
 
         .cart{
-            margin-left: 70px;
+            margin-left: 90px;
             &_link {
                 display: flex;
                 align-items: center;
@@ -157,19 +158,17 @@ button {
         &-content {
             font-size: 30px;
         }
+      }
     }
     .hand-made_about {
-        display: flex;
-        align-items: center;
+      display: flex;
         .text-about  {
             margin-left: 50px;
         }
-    }
-}
-
+      }
 .customers {
     &-title{
-        font-size: 50px;
+        font-size: 16px;
         text-align: center;
     }
     .shop {
@@ -278,18 +277,43 @@ button {
     }
 }
 
-.all-footer {
-    margin-top: 120px;
-    display: flex;
-    justify-content: space-around;
-
-
-    .main-block{
-        display: flex;
+.page-footer {
+  background-color: $dark-accent-color;
+  .footer{
+    .footer-img{
+      width: 250px;
+      height: 200px;
     }
-    // .our-contacts{
-    //     display: flex;
-    // }
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    &-logo {
+      flex: 0 0 40%;
+    }
+    &-nav {
+      flex: 0 0 60%;
+      display: flex;
+      justify-content: space-between;
+      color: $white;
+    }
+    &-list {
+      list-style-type: none;
+      padding-left: 0;
+      &-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      &-item {
+        margin-bottom: 10px;
+      }
+      &-link {
+        color: $light-accent-color;
+        text-decoration: none;
+        font-style: 14px;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 // Styles For Pages
@@ -320,6 +344,8 @@ button {
         font-size: 20px;
     }
 }
+
+
 
 
 
@@ -408,6 +434,7 @@ button {
   margin: 2em;
   margin-bottom: 3em;
 }
+
 
 .section-header {
   font-weight: normal;

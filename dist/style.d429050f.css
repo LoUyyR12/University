@@ -9,10 +9,11 @@
 .under {
   background-color: #fcddc6;
   height: 18px;
+  width: 100%;
 }
 
 .wrapper {
-  max-width: 1050px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -20,6 +21,7 @@ hr {
   border: none;
   background-color: #cf5a11;
   height: 2px;
+  width: 1000px;
 }
 
 button {
@@ -59,11 +61,32 @@ button:hover {
 .header-page header nav .main-nav {
   list-style: none;
   display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: 1px;
+  align-items: center;
+  font-size: 17px;
+  margin-left: 70px;
+}
+.header-page header nav .main-nav-item {
+  margin-right: 60px;
+  padding: 7px;
+}
+.header-page header nav .main-nav-link {
+  display: flex;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #2e2601;
+  color: #2e2601;
+  border-radius: 10px;
+  padding: 7px;
+  margin-top: 6px;
+}
+.header-page header nav .main-nav-link:hover {
+  background-color: #e49c6f;
 }
 .header-page header .cart {
-  margin-left: 70px;
+  margin-left: 90px;
 }
 .header-page header .cart_link {
   display: flex;
@@ -121,16 +144,16 @@ button:hover {
 .background .description-content {
   font-size: 30px;
 }
-.background .hand-made_about {
+
+.hand-made_about {
   display: flex;
-  align-items: center;
 }
-.background .hand-made_about .text-about {
+.hand-made_about .text-about {
   margin-left: 50px;
 }
 
 .customers-title {
-  font-size: 50px;
+  font-size: 16px;
   text-align: center;
 }
 .customers .shop {
@@ -229,13 +252,43 @@ button:hover {
   font-size: 30px;
 }
 
-.all-footer {
-  margin-top: 120px;
-  display: flex;
-  justify-content: space-around;
+.page-footer {
+  background-color: #2e2601;
 }
-.all-footer .main-block {
+.page-footer .footer {
   display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.page-footer .footer .footer-img {
+  width: 250px;
+  height: 200px;
+}
+.page-footer .footer-logo {
+  flex: 0 0 40%;
+}
+.page-footer .footer-nav {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.page-footer .footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.page-footer .footer-list-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.page-footer .footer-list-item {
+  margin-bottom: 10px;
+}
+.page-footer .footer-list-link {
+  color: #e49c6f;
+  text-decoration: none;
+  font-style: 14px;
+  text-decoration: none;
 }
 
 .handmade-logo img {
